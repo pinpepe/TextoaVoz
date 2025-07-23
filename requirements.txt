@@ -3,5 +3,4 @@ uvicorn
 streamlit
 google-cloud-texttospeech
 pydub
-pyaudio
 requests
