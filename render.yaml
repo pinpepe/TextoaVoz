@@ -12,7 +12,6 @@ services:
       mountPath: ./projects
       sizeGB: 5
     autoDeploy: true
-    # Añade tu archivo de credenciales de Google TTS como secreto en Render
     secrets:
       - name: google-tts.json
         file: google-tts.json
@@ -24,6 +23,5 @@ services:
     startCommand: streamlit run webui.py --server.port 10000 --server.address 0.0.0.0
     envVars:
       - key: API_URL
-        # Cambia esto por la URL de tu backend una vez desplegado, por ejemplo:
         value: https://vozmulti-backend.onrender.com
     autoDeploy: true
