@@ -5,3 +5,4 @@ requests
 gunicorn
 uvicorn[standard]
 fastapi
+python-multipart
